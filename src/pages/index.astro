@@ -1,0 +1,405 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const title = "Looking for a co-founder. The QR code brought you here for a reason.";
+const description =
+  "Sumukha Hegde built SpeakUp solo, made it real, and is now looking for the right co-founder to build something bigger.";
+
+const proofCards = [
+  {
+    metric: "35K+",
+    label: "installs across iOS + Android",
+    note: "Built, launched, marketed, and supported solo.",
+  },
+  {
+    metric: "$1100",
+    label: "revenue in the last 28 days",
+    note: "Running on autopilot. As of Apr 18, 2026.",
+    link: "https://trustmrr.com/startup/speakup"
+  },
+  {
+    metric: "4.6+",
+    label: "average product rating",
+    note: "People actually use this thing before presentations and interviews.",
+  },
+  {
+    metric: "100%",
+    label: "product + growth ownership",
+    note: "Code, design, launch, support, marketing loops. I do the whole opera.",
+  },
+];
+
+const journey = [
+  {
+    title: "Engineer #15 at Phyllo",
+    copy:
+      "Started as an intern, moved up to SDE-1, then SDE-2. Worked for 3 years across both backend and frontend stacks shipping production systems under pressure.",
+  },
+  {
+    title: "Quit and built SpeakUp",
+    copy:
+      "Left the job, built an AI public speaking app, shipped it to both stores, and turned it into a real revenue engine instead of a Notion doc cosplay startup.",
+  },
+  {
+    title: "The Failure: Looma AI",
+    copy:
+      "Tried the co-founder route. $0 revenue, co-founder conflict. Gained hands-on experience in Facebook Ads, growth marketing, and learning when to walk away from a bad fit.",
+  },
+  {
+    title: "Now",
+    copy:
+      "I know I can build alone. That is exactly why I’m looking for the right person now: not to fill a gap in effort, but to unlock a bigger swing.",
+  },
+];
+
+const strengths = [
+  "Executes fast without waiting for ceremony or permission slips.",
+  "Can carry product, engineering, design taste, and growth loops together.",
+  "Comfortable with ambiguity, but not vague thinking.",
+  "Likes directness, honest feedback, and people who do what they said they would do.",
+];
+
+const builds = [
+  {
+    name: "SpeakUp",
+    link: "https://www.practicepublicspeaking.com/",
+    description:
+      "AI-powered public speaking practice app. Cross-platform. Real users. Real traction. Real revenue. This is the main proof that I can turn idea -> shipped product -> distribution -> money.",
+    tag: "Main character energy",
+  },
+  {
+    name: "Dialogue Prompt",
+    link: "https://sumukhah.github.io/search_gpt_website/",
+    description:
+      "A spotlight-style desktop app for jumping into LLM workflows quickly. Useful, opinionated, and built because friction annoys me.",
+    tag: "Scratch-your-own-itch",
+  },
+  {
+    name: "Simplehuman",
+    link: "https://www.simplehuman.email/",
+    description:
+      "A Gmail workflow extension built collaboratively. A good example that I do care about daily-use tools, not just startup pitch decks.",
+    tag: "Taste + utility",
+  },
+];
+
+const lookingFor = [
+  "In or around Bangalore (< 200km).",
+  "High integrity. High agency. Low ego. Builder-first mindset.",
+  "Someone who likes building more than performing startup theatre.",
+  "Comfortable with ambiguity, rapid iteration, and figuring things out together.",
+];
+
+const publicLinks = [
+  { label: "YC Profile", href: "https://www.startupschool.org/cofounder-matching/candidate/2TVZcfprC" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/--sumukha--/" },
+  { label: "X / Twitter", href: "https://x.com/Sumukha__" },
+  { label: "GitHub", href: "https://github.com/sumukhah" },
+  { label: "Email", href: "mailto:emailtosumukha@gmail.com" },
+];
+
+const tallyFormUrl = import.meta.env.PUBLIC_TALLY_FORM_URL ?? "";
+const formReady = tallyFormUrl.length > 0;
+---
+
+<BaseLayout title={title} description={description} path="/">
+  <main class="relative overflow-x-hidden">
+    <div class="matrix-rain absolute inset-0 -z-10"></div>
+
+    <header class="mx-auto max-w-7xl px-5 pb-12 pt-6 sm:px-6 lg:px-8">
+      <nav class="glass-panel flex items-center justify-between rounded-full px-4 py-3 text-sm text-copy-soft sm:px-6">
+        <div class="flex items-center gap-3">
+          <span class="inline-flex h-3 w-3 rounded-full bg-signal shadow-[0_0_18px_rgba(86,248,137,0.45)]"></span>
+          <span class="font-semibold tracking-[0.2em] uppercase text-cream">sumukhah.github.io</span>
+        </div>
+        <div class="hidden items-center gap-5 sm:flex">
+          <a href="#speakup" class="transition hover:text-cream">SpeakUp</a>
+          <a href="#timeline" class="transition hover:text-cream">Timeline</a>
+          <a href="#contact" class="transition hover:text-cream">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+      <div class="grid items-start gap-8 lg:grid-cols-[1.25fr_0.75fr]">
+        <div class="reveal">
+          <p class="eyebrow">Co-Founder Search Transmission</p>
+          <h1 class="display-title mt-6 max-w-4xl text-[3rem] leading-[0.95] font-semibold text-cream sm:text-[4.6rem] lg:text-[5.3rem]">
+            If you're reading this, my T-shirt worked.
+            <span class="block text-signal">Let's see if we're a match.</span>
+          </h1>
+          <p class="mt-6 max-w-3xl text-lg leading-8 text-copy-soft sm:text-xl">
+            I’m Sumukha. Bengaluru-based founder. Built SpeakUp end-to-end, got it into both app stores, grew it to real installs and real revenue, and now I’m looking for a cofounder to build something even bigger.
+          </p>
+
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a class="pill-button pill-green" href="#contact">Drop your LinkedIn</a>
+          </div>
+
+          <div class="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-sm font-semibold text-copy-soft">
+            {publicLinks.map((link) => (
+              <a href={link.href} target="_blank" rel="noreferrer" class="hover:text-cream transition decoration-line/40 underline-offset-4 hover:underline">
+                {link.label}
+              </a>
+            ))}
+          </div>
+
+          <div class="mt-10 grid gap-4 sm:grid-cols-3">
+            <div class="glass-panel noise-card rounded-[1.5rem] p-5">
+              <p class="text-xs font-semibold tracking-[0.22em] uppercase text-signal">Current vibe</p>
+              <p class="mt-3 text-2xl font-semibold text-cream">Builder, not brochure designer.</p>
+            </div>
+            <div class="glass-panel noise-card rounded-[1.5rem] p-5">
+              <p class="text-xs font-semibold tracking-[0.22em] uppercase text-alarm">Looking for</p>
+              <p class="mt-3 text-2xl font-semibold text-cream">Integrity + agency + edge.</p>
+            </div>
+            <div class="glass-panel noise-card rounded-[1.5rem] p-5">
+              <p class="text-xs font-semibold tracking-[0.22em] uppercase text-gold">Dealbreaker</p>
+              <p class="mt-3 text-2xl font-semibold text-cream">Startup theatre without substance.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal lg:pt-10 flex justify-center lg:justify-end">
+          <div class="glass-panel signal-border noise-card rounded-[2rem] p-5 sm:p-6 w-full max-w-[340px]">
+            <div class="flex items-center justify-between text-sm text-copy-soft">
+              <span>Status</span>
+              <span>Scanning for right fit</span>
+            </div>
+            <div class="mt-4 rounded-[1.6rem] border border-line bg-[radial-gradient(circle_at_top,_rgba(86,248,137,0.22),_transparent_40%),linear-gradient(180deg,rgba(11,23,16,0.9),rgba(7,17,11,0.9))] p-6 relative overflow-hidden flex items-center justify-center min-h-[300px]">
+              <img src="/wave.png" alt="Waving Persona" class="h-auto w-full max-w-[220px] drop-shadow-[0_0_20px_rgba(86,248,137,0.15)] animate-[wiggle_1s_ease-in-out_infinite] object-contain" />
+            </div>
+
+            <div class="mt-5 flex gap-3 overflow-hidden rounded-full border border-line bg-[rgba(8,18,12,0.72)] px-4 py-3 text-xs font-semibold tracking-[0.18em] uppercase text-copy-soft">
+              <div class="marquee-track flex min-w-max gap-3">
+                <span>consumer app shipped</span>
+                <span>real revenue</span>
+                <span>cross-platform</span>
+                <span>marketing experiments</span>
+                <span>founder-fit learned the hard way</span>
+                <span>looking for 1 sharp person</span>
+                <span>consumer app shipped</span>
+                <span>real revenue</span>
+                <span>cross-platform</span>
+                <span>marketing experiments</span>
+                <span>founder-fit learned the hard way</span>
+                <span>looking for 1 sharp person</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="speakup" class="mx-auto mt-10 max-w-7xl px-5 sm:px-6 lg:px-8">
+      <div class="reveal section-shell glass-panel rounded-[2rem] p-6 lg:p-8">
+        <div class="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
+          <div>
+            <p class="eyebrow">SpeakUp</p>
+            <h2 class="display-title mt-5 text-3xl font-semibold text-cream sm:text-4xl">SpeakUp - Presentation practicing app</h2>
+          </div>
+          <p class="max-w-xl text-sm leading-7 text-copy-soft">
+            I built it solo, shipped it to both stores, marketed it, supported it, and
+            turned it into something that works even when I’m not babysitting it.
+          </p>
+        </div>
+
+        <div class="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+          {proofCards.map((card) => (
+            <article class="noise-card rounded-[1.6rem] border border-line bg-[rgba(9,20,14,0.78)] p-5 flex flex-col">
+              <div class="flex items-start justify-between">
+                <p class="display-title text-4xl font-semibold text-cream">{card.metric}</p>
+                {card.link && (
+                  <a href={card.link} target="_blank" rel="noreferrer" aria-label="Verify Live" class="text-copy-soft transition hover:text-signal" title="Live dashboard">
+                    <svg class="h-5 w-5 opacity-40 hover:opacity-100 transition" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+                  </a>
+                )}
+              </div>
+              <p class="mt-3 text-base font-semibold text-signal">{card.label}</p>
+              <p class="mt-4 text-sm leading-7 text-copy-soft flex-1">{card.note}</p>
+            </article>
+          ))}
+        </div>
+
+        <div class="mt-6 flex flex-wrap gap-6 justify-end">
+          <a class="inline-flex items-center gap-2 text-sm font-semibold text-signal hover:text-cream transition decoration-line/40 underline-offset-4 hover:underline" href="https://play.google.com/store/apps/details?id=com.fear2freedom.speakup" target="_blank" rel="noreferrer">
+             Google Play Store
+             <span aria-hidden="true">↗</span>
+          </a>
+          <a class="inline-flex items-center gap-2 text-sm font-semibold text-signal hover:text-cream transition decoration-line/40 underline-offset-4 hover:underline" href="https://trustmrr.com/startup/speakup" target="_blank" rel="noreferrer">
+             Listed on TrustMRR
+             <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="timeline" class="mx-auto mt-10 max-w-7xl px-5 sm:px-6 lg:px-8">
+      <div class="grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">
+        <div class="reveal section-shell glass-panel rounded-[2rem] p-6 lg:p-8">
+          <p class="eyebrow">Timeline</p>
+          <h2 class="display-title mt-5 text-3xl font-semibold text-cream sm:text-4xl">
+            My Past & Present.
+          </h2>
+
+          <div class="mt-10 space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px before:h-full before:w-px before:bg-gradient-to-b before:from-signal/0 before:via-signal/30 before:to-signal/0">
+            {journey.map((step, index) => (
+              <div class="relative flex items-start pl-12 z-10">
+                <div class="absolute left-0 top-1 flex h-10 w-10 items-center justify-center rounded-full border border-signal/30 bg-[rgba(8,18,12,0.95)] text-xs font-semibold text-signal shadow-[0_0_15px_rgba(86,248,137,0.15)]">
+                  0{index + 1}
+                </div>
+                <article class="noise-card rounded-[1.4rem] border border-line bg-[rgba(9,20,14,0.72)] p-5 w-full">
+                  <h3 class="text-lg font-semibold text-cream">{step.title}</h3>
+                  <p class="mt-2 text-sm leading-7 text-copy-soft">{step.copy}</p>
+                </article>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div class="reveal section-shell glass-panel rounded-[2rem] p-6 lg:p-8">
+          <p class="eyebrow">Why I’m Good To Work With</p>
+          <h2 class="display-title mt-5 text-3xl font-semibold text-cream sm:text-4xl">
+            Useful traits. Not LinkedIn poetry.
+          </h2>
+          <div class="mt-8 grid gap-4">
+            {strengths.map((strength) => (
+              <div class="noise-card rounded-[1.4rem] border border-line bg-[rgba(12,26,18,0.82)] p-5">
+                <p class="text-base leading-8 text-cream">{strength}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="mx-auto mt-10 max-w-7xl px-5 sm:px-6 lg:px-8">
+      <div class="grid gap-8 lg:grid-cols-[1fr_0.9fr]">
+        <div class="reveal section-shell glass-panel rounded-[2rem] p-6 lg:p-8">
+          <p class="eyebrow">What I’m Looking For</p>
+          <h2 class="display-title mt-5 text-3xl font-semibold text-cream sm:text-4xl">
+            Someone I’d actually want in the room when things get hard.
+          </h2>
+
+          <div class="mt-8 grid gap-4">
+            {lookingFor.map((item) => (
+              <div class="noise-card rounded-[1.4rem] border border-line bg-[rgba(10,21,15,0.78)] px-5 py-4">
+                <p class="text-base leading-8 text-cream">{item}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div class="reveal section-shell glass-panel rounded-[2rem] p-6 lg:p-8">
+          <p class="eyebrow">Fit Check</p>
+          <h2 class="display-title mt-5 text-3xl font-semibold text-cream sm:text-4xl">
+            You probably should reach out if...
+          </h2>
+          <ul class="mt-8 space-y-4 text-sm leading-7 text-copy-soft">
+            <li class="rounded-[1.3rem] border border-line bg-[rgba(11,23,16,0.78)] px-5 py-4">
+              You want to build something ambitious, not just be around startup people.
+            </li>
+            <li class="rounded-[1.3rem] border border-line bg-[rgba(11,23,16,0.78)] px-5 py-4">
+              You have enough career proof that your LinkedIn is worth sending.
+            </li>
+            <li class="rounded-[1.3rem] border border-line bg-[rgba(11,23,16,0.78)] px-5 py-4">
+              You can handle honest feedback without turning it into a full emotional subcommittee.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="mx-auto mt-10 max-w-7xl px-5 pb-20 sm:px-6 lg:px-8">
+      <div class="reveal section-shell glass-panel rounded-[2rem] p-6 lg:p-8">
+        <div class="grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">
+          <div>
+            <p class="eyebrow">Contact / Apply</p>
+            <h2 class="display-title mt-5 text-3xl font-semibold text-cream sm:text-4xl">
+              Think we might be a fit? Drop your details and I'll reach out.
+            </h2>
+            <p class="mt-5 max-w-xl text-base leading-8 text-copy-soft">
+              Fill out the form to the right. I review every profile personally and will reach out if there's a strong fit to build together.
+            </p>
+
+            <div class="mt-6 flex flex-wrap gap-3 text-sm text-copy-soft">
+              {publicLinks.map((link) => (
+                <a
+                  href={link.href}
+                  target={link.href.startsWith("mailto:") ? undefined : "_blank"}
+                  rel={link.href.startsWith("mailto:") ? undefined : "noreferrer"}
+                  class="pill-button pill-ghost !px-4 !py-3"
+                >
+                  {link.label}
+                </a>
+              ))}
+            </div>
+          </div>
+
+          <div class="rounded-[1.8rem] border border-line bg-[linear-gradient(180deg,rgba(14,30,20,0.94),rgba(7,17,11,0.86))] p-5 sm:p-6">
+            <div class="rounded-[1.4rem] border border-line bg-[rgba(6,13,9,0.72)] p-3 h-full">
+              {formReady ? (
+                <iframe
+                  id="tally-embed"
+                  src={tallyFormUrl}
+                  loading="lazy"
+                  title="Co-Founder Fit Check Form"
+                  class="min-h-[520px] w-full rounded-[1rem] border-0 bg-white"
+                ></iframe>
+              ) : (
+                <div class="rounded-[1rem] border border-dashed border-line px-4 py-8 text-center text-sm leading-7 text-copy-soft h-full flex flex-col items-center justify-center min-h-[300px]">
+                  Add your published Tally form URL in <code class="rounded bg-[rgba(255,255,255,0.05)] px-1 py-0.5">PUBLIC_TALLY_FORM_URL</code>
+                  to display the Fit Check form.
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="border-t border-line/60 bg-[rgba(4,10,6,0.72)]">
+      <div class="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-8 text-sm text-copy-soft sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+        <p>Built for one job: help the right co-founder decide whether to reach out.</p>
+        <div class="flex flex-wrap gap-4">
+          {publicLinks.map((link) => (
+            <a
+              href={link.href}
+              target={link.href.startsWith("mailto:") ? undefined : "_blank"}
+              rel={link.href.startsWith("mailto:") ? undefined : "noreferrer"}
+              class="transition hover:text-cream"
+            >
+              {link.label}
+            </a>
+          ))}
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // @ts-nocheck
+    const reveals = Array.from(document.querySelectorAll(".reveal"));
+
+    if ("IntersectionObserver" in window) {
+      const revealObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              revealObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.18 }
+      );
+
+      reveals.forEach((node) => revealObserver.observe(node));
+    } else {
+      reveals.forEach((node) => node.classList.add("is-visible"));
+    }
+  </script>
+</BaseLayout>

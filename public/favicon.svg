@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="S monogram">
+  <rect width="128" height="128" rx="28" fill="#07110b" />
+  <path d="M31 43c0-12 9-20 24-20h41v15H57c-6 0-10 2-10 7 0 4 3 6 8 8l24 7c12 4 19 11 19 24 0 14-11 24-28 24H31V93h39c7 0 12-3 12-9 0-5-4-7-10-9L49 68C38 64 31 57 31 43Z" fill="#c9ffd5" />
+  <circle cx="97" cy="31" r="8" fill="#ff4d6d" />
+</svg>

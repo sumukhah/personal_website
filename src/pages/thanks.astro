@@ -1,0 +1,30 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Thanks. I’ll check your LinkedIn before I do anything impulsive."
+  description="Your profile made it through the QR portal."
+  path="/thanks/"
+>
+  <main class="mx-auto flex min-h-screen max-w-3xl items-center px-6 py-16">
+    <section class="glass-panel signal-border noise-card w-full rounded-[2rem] p-8 sm:p-12">
+      <p class="eyebrow">Transmission Received</p>
+      <h1 class="display-title mt-6 text-4xl font-semibold text-cream sm:text-6xl">
+        Thanks. I have your LinkedIn.
+      </h1>
+      <p class="mt-5 max-w-2xl text-lg leading-8 text-copy-soft">
+        That is enough for me to do the stalking part respectfully. If there is a real fit, I’ll reach out after I’ve
+        looked through your background.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-4">
+        <a class="pill-button pill-green" href="/">
+          Back to the page
+        </a>
+        <a class="pill-button pill-ghost" href="https://www.linkedin.com/in/--sumukha--/" target="_blank" rel="noreferrer">
+          Follow on LinkedIn
+        </a>
+      </div>
+    </section>
+  </main>
+</BaseLayout>

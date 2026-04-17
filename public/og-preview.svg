@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#07110b" />
+      <stop offset="100%" stop-color="#10261a" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect x="64" y="64" width="1072" height="502" rx="28" fill="rgba(16,38,26,0.55)" stroke="#53f88d" stroke-opacity="0.25" />
+  <text x="90" y="212" fill="#f2ffe8" font-family="Arial, sans-serif" font-size="76" font-weight="700">Looking for a co-founder.</text>
+  <text x="90" y="304" fill="#53f88d" font-family="Arial, sans-serif" font-size="48">Sumukha ships. The QR code explains why.</text>
+  <text x="90" y="408" fill="#c6d6c9" font-family="Arial, sans-serif" font-size="34">SpeakUp. 35K+ installs. Real revenue. Internet chaos energy.</text>
+  <circle cx="1020" cy="162" r="54" fill="#ff5a76" />
+  <circle cx="1020" cy="314" r="54" fill="#53f88d" />
+</svg>
