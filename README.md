@@ -1,36 +1,29 @@
-# Sumukha QR Founder Site
+# Co-Founder OS Template
 
-Single-page Astro landing page for `sumukhah.github.io`, designed for QR scans from the YC co-founder T-shirt.
+A minimal, no-nonsense one-page personal website template optimized for capturing signals from solid connections (e.g., potential co-founders) rather than serving as a traditional resume or portfolio. Built to run incredibly fast using **Astro**, styled with **Tailwind CSS**, and pre-configured for automated **GitHub Pages** deployment.
 
-## Stack
+## Tech Stack
+- [Astro](https://astro.build/) - Web framework optimized for speed.
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first styling with a dark-mode, terminal-inspired glassmorphism theme.
+- **Tally Forms** - Pre-configured layout for a seamless, headless lead qualification form.
+- **Google Analytics** - Quick and easy pipeline hook setup (`gtag.js`).
+- **GitHub Actions** - Automated deployment pipeline baked into `.github/workflows/deploy.yml`.
 
-- Astro
-- Tailwind CSS v4
-- Static deployment for GitHub Pages
-- Tally for the two-field contact flow
+## Features
+- **Micro-Interactions**: Subtle, responsive CSS animations to bring personality to the hero section.
+- **Form Integration**: Skip building backend infrastructure. The contact section elegantly frames an external submission form.
+- **Progressive Timeline**: Visualize professional and build history cleanly.
 
-## Local development
+## Getting Started
 
-```sh
-npm install
-cp .env.example .env
-npm run dev
-```
+1. Clone the repository
+2. Run `npm install` to install dependencies
+3. Replace the placeholder Google Analytics ID in `src/layouts/BaseLayout.astro`
+4. Run `npm run dev` to start the local development server at `localhost:4321`
 
-Add your published Tally form URL to `.env`:
+## Deployment
 
-```sh
-PUBLIC_TALLY_FORM_URL=...
-```
+This repository is strictly configured to deploy directly to GitHub Pages. 
 
-## Production build
-
-```sh
-npm run build
-```
-
-## Deployment notes
-
-- The site is configured for the root GitHub Pages domain: `https://sumukhah.github.io`
-- The contact section requires `PUBLIC_TALLY_FORM_URL` to be present at build time
-- The Tally form itself should contain only the 2 agreed fields
+Whenever you push to the `main` branch, the Astro custom action intercepts the build, optimizes assets, and distributes to GitHub Pages. 
+To launch your version, simply navigate to your repository's **Settings > Pages** and switch the build source to **GitHub Actions**.
